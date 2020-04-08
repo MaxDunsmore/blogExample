@@ -2,10 +2,19 @@
 
 
 {% block content %}
-<h3>Registered Users: </h3>
-	{% for account in accounts %}
-		<p>{{ account }} | {{ account.date_joined }}</p>
-	{% endfor %}
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+  <h1 class="display-4">Blog Example</h1>
+  <p class="lead">A demonstration of a basic blog made with django, feauturing user registration and blog CRUD functionality </p>
+</div>
+
+<div class="container">
+	<div class="d-flex flex-column"> <!
+		<h5>Registered Users: </h4>
+			{% for account in accounts %}
+				<p>{{ account }} | {{ account.date_joined }}</p>
+			{% endfor %}
+	</div>
+</div>
 
 {% endblock content %}
 
